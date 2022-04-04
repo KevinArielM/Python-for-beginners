@@ -1,0 +1,44 @@
+diccionario1={
+  "key":1,
+  "key2": "a"
+}
+
+#print(diccionario1["key"])
+#print(diccionario1["key2"])
+
+#ciclo for no el valor, sino la llave
+for i in diccionario1:
+  print(diccionario1[i])
+
+diccionario1["key2"] = "Ariel"
+print(diccionario1)
+
+diccionario1["key"]=20
+print(diccionario1)
+
+diccionario1={}
+print(diccionario1)
+
+tareas=5
+def incrementa_tareas():
+  tareas=2
+  print(f"tareas dentro de la función  {tareas}")
+incrementa_tareas()
+print(f"tareas dentro de la función {tareas}" )
+##por la identación
+##local scope dentro función
+##global scope fuera 
+#MAYUSCUA
+
+VIDAS=10
+def juego ():
+  global VIDAS
+  def tomar_poción():
+    poción=2
+    print(VIDAS+poción)
+  tomar_poción()
+  VIDAS+=3
+
+print (VIDAS)
+juego
+print(VIDAS)
