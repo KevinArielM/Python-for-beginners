@@ -1,0 +1,23 @@
+#Dada la siguiente listas
+lista = [95, 99, 56, 99, 48, 83, 66, 70, 20, 77, 2, 92, 32, 47, 14, 96, 1, 37, 83, 92]
+
+#Imprime el tercer valor de la lista
+##second value of the list
+print(lista[2])
+
+
+#Imprimir el maximo valor de la lista
+##max function
+print(max(lista))
+
+#Imprimir el minimo valor de la lista
+print(min(lista))
+##min function
+
+#Imprimir la suma de todos los valores de la lista
+##sum all the values of the list
+print(sum(lista))
+
+#Imprimir la cantidad de elementos que tiene la lista
+##len for count the elements of the list
+print(len(lista))
