@@ -1,0 +1,35 @@
+#Estamos en el viejo Oeste, y un colega nos pide jugar al juego de la ruleta
+import random
+lista=["Gabriela", "Carlos","Juan","Jose","Julia","María","Jenkins"]
+#En el grupo estamos Gabriela, Carlos, Juan, Jose, Julia, Maria y Jenkins
+print("Le tocó la bala a"+"-"+ random.choice(lista))
+#Generar un programa que elija a uno de nosotros e imprima quien le tocará la bala
+
+#Estamos en el viejo Oeste, y un colega nos pide jugar al juego de la ruleta
+#En el grupo estamos Gabriela, Carlos, Juan, Jose, Julia, Maria y Jenkins
+#Generar un programa que elija a uno de nosotros e imprima quien le tocará la bala
+
+import random
+players = ["Gabriela", "Carlos","Juan", "Jose","Julia", "Maria", "Jenkins"]
+
+largo_lista = len(players)
+print(largo_lista)
+posicion_aleatoria = random.randint(0,largo_lista)
+
+print(f"{players[posicion_aleatoria]} muere")
+
+
+
+
+for jugador in players:
+  print(jugador)
+
+
+#for i in range(3):
+ # print(players[i])
+
+#for i in range (0,4):
+  #print(players[i])
+
+for i in range (0,50,10):
+  print(i)
