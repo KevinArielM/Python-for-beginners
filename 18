@@ -1,0 +1,110 @@
+#Notas. Día 4
+
+#a=5
+#b=7
+#while a<b:
+ # print(a)
+  #a+=1
+
+#def para la funcion
+
+def sumar ( ):
+  a=53435
+  b=65534
+  print(a+b)
+
+sumar()
+
+
+
+
+
+# a = 5
+# b = 7
+# while a < b:
+# 	print(a)
+# 	a += 3
+
+def sumar(a, b):
+
+	print(a + b)
+
+def restar(a, b):
+	print(a - b)
+
+def multiplicacion(a, b):
+	print(a * b)
+
+def calculadora(a, b, operacion):
+	if operacion == "sumar":
+		sumar(a, b)
+	elif operacion == "restar":
+		restar(a, b)
+	elif operacion == "multiplicacion":
+		multiplicacion(a, b)
+
+calculadora(5, 3, "restar")
+
+# sumar(5, 3, 4)
+# restar(5, 3)
+# multiplicacion(2, 5)
+
+
+# Addition
+def sum (x, y) :
+  print("The result is: ")
+  print(x + y)
+
+# Substraction
+def sub (x, y) :
+  print("The result is: ")
+	print(x-y)
+
+# Multiplication
+def mul (x, y) :
+	print("The result is: ")
+	print(x * y)
+
+# Division
+def div (x, y) :
+	if y == 0:
+		return
+	print("The result is: ")
+	print(x / y)
+
+# Exponent
+def exp (x, y) :
+  print("The result is: ")
+  print(x ** y)
+
+
+
+def calculator(a, b, operacion) :
+  if operation == 'addition' :
+    sum(num1, num2)
+
+  if operation == 'substraction' :
+    sub(num1, num2)
+  
+  if operation == 'multiplication' :
+    mul(num1, num2)
+  
+  if operation == 'division' :
+    div(num1, num2)
+
+  if operation == 'exponent' :
+    exp(num1, num2)
+
+
+while True :
+  print("What type of operation should I do ?")
+  operation = input("'addition' / 'substraction' / 'multiplication' / 'division' / 'exponent': ")
+  num1 = float(input("First number: "))
+  num2 = float(input("Second number: ")) 
+
+  calculator(num1, num2, operation)
+
+  print("Repeat?")
+  other = input("'yes' / 'no': ")
+  if other == 'no':
+    break
