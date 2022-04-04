@@ -1,0 +1,37 @@
+#Reto difícil
+
+#Reto fácil + Blackjack, usando cartas A y J
+from random import randint, choice
+
+##define varibale of decision
+
+##define game function, it makes the operations
+def game():
+	carts = [randint(2, 10) for i in range(2)]
+	computercards = [randint(2, 10) for i in range(2)]
+	print(f"Your cards: {carts}, Total score: {sum(carts)}")
+	print(f"Computer's first card: {computercards[0]}")
+
+
+def repeat ():
+  while True:
+    decision=input("Do you want to play Blackjack (si, no)?: ")
+    if decision=="si":
+      game()
+      
+    elif decision=="no":
+      print("Come back soon!")
+      break
+
+repeat()
+
+
+def blackjack():
+	while True:
+		to_play = input("Do you want to play a game of Blackjack? Type 'y' or 'n': ")
+		if to_play == "y":
+			game()
+		else:
+			print("Ok, good bye. Have a nice day :)")
+			break
+blackjack()
