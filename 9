@@ -1,0 +1,53 @@
+#Reto1.Día2
+#Estas en medio del desierto, a un lado de una carretera, ¿que harás, ('esperar') un auto, o ('caminar')?
+#-->caminar-->Te pierdes en el desierto y mueres de sed. GAME OVER!!
+###Estaré definiendo variables y luego agregándolas en otro if porque no estoy seguro de cómo cerrar los ciclos en Python
+Primero=input("Estas en medio del desierto, a un lado de una \ncarretera, ¿que harás, ('esperar') un auto, o ('caminar')?: \n")
+###solo se aceptan dos respuestas
+if Primero=="caminar":
+  print("Te pierdes en el desierto y mueres de sed. GAME OVER")
+elif Primero=="esperar":
+  print("Aparece un coche a la lejanía y esperas hasta que lleguen")
+#-->esperar-->Aparece un coche a la lejania y esperas hasta que lleguen
+###a esto me refería:
+if Primero=="esperar":
+  Segundo= input("¡Son un grupo de canibales!: ¿qué harás ('pelear') para robar el auto o ('correr')?: \n")
+if Segundo=="correr":
+  print("Terminas alucinando en el desierto por toda tu vida. GAME OVER")
+elif Segundo=="pelear":
+  print("Por suerte encontraste una piedra y los canibales parecen ser demasiado lentos así que ganas el combate.")
+
+#Upps!! Son un grupo de canibales, qué haras, ('pelear') para robar el auto o ('correr')?
+#-->correr-->Terminas alucinando en el desierto por toda tu vida. GAME OVER!!
+#-->pelear-->Por suerte encontraste una piedra y los canibales parecen ser demasiado lentos así que ganas el combate
+###así sucesivamente...
+if Segundo=="pelear":
+  Tercero=input("Comienzas a acelerar en el vehículo, pero notas que la gasolina no parece soportar el resto del camino. ¿Qué haras, ('acelerar') hasta que se agote la gasolina o conducir ('lento') para ahorrar gasolina?: \n")
+if Tercero=="acelerar":
+  print("El auto se prende en llamas y explota contigo adento. GAME OVER")
+elif Tercero=="lento":
+  print("El auto parece escuchar tus plegarías y te lleva al final del desierto")
+
+
+#")
+#qué haras, ('acelerar') hasta que se agote la gasolina o conducir ('lento') para ahorrar gasolina?")
+#Comienzas a acelerar en el vehículo, pero notas que la gasolina no parece soportar el resto del camino
+#qué haras, ('acelerar') hasta que se agote la gasolina o conducir ('lento') para ahorrar gasolina?
+#-->acelerar-->El auto se prende en llamas y explota contigo adentro. GAME OVER
+#-->lento-->El auto parece escuchar tus plegarias y te lleva al final del desierto
+if Tercero=="lento":
+  Cuarto=input("La sed te esta matando y al revisar el vehículo encuentras 3 botellas con líquidos.¿Cuál tomarás ('roja'),('verde'),('azul')?: \n")
+if Cuarto=="roja":
+  print("Es jugo de frutas. Yumi. You win!")
+elif Cuarto=="verde":
+  print("Al parecer era ácido. GAME OVER")
+elif Cuarto=="azul":
+  print("Comienzas a tener aluciones y pierdes la conciencia. GAME OVER")
+
+###si se llega hasta el final acertando cada pregunta no aparecerá un error; si nos atoramos en una pregunta anterior, detiene el proceso pero marca error al mismo tiempo.
+
+#La sed te esta matando y al revisar el vehículo encuentras 3 botellas con líquidos, cuál tomarás
+#('roja'),('verde'),('azul')?
+#-->roja-->Es jugo de frutas yumi. You win!!
+#-->verde-->Al parecer era ácido. GAME OVER!!
+#-->azul-->Comienzas a tener alucinaciones y pierdes la conciencia. GAME OVER!!
