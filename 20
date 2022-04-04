@@ -1,0 +1,30 @@
+# Realizar un programa que imprima si un número es primo o no.
+# Dicho programa validará el número que el usuario le pase como parametro a una función
+
+
+def es_primo(num):
+	aux = 1
+	for numero in range(num + 1):
+		if num % numero:
+			aux += 1
+	if aux > 2:
+		print("No es primo")
+	else:
+		print("Es primo")
+
+dato = int(input("Ingresa un valor: "))
+if type(dato) != 'int':
+	print("No es un dato numerico")
+else:
+	es_primo(dato)
+
+##notas
+
+def sumar (a,b):
+  """
+  Esta función suma 
+  """
+  resultado=a+b
+  return resultado
+valor=sumar(4,6)
+print(valor)
