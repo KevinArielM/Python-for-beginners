@@ -1,0 +1,49 @@
+#Reto1.Día3
+# --- Crear un juego de piedra papel o tijera, 
+# donde tu competirás contra la computadora ---
+##import the random function
+import random
+
+options=["piedra", "papel", "tijera"]
+print("A jugar piedra, papel o tijera se ha dicho")
+##ask for the option
+option=input("Ingrese su elección (piedra, papel o tijera): ")
+
+##the random option
+randonmum=random.choice(options)
+##the game
+print(option+" vs "+ randonmum)
+
+##case 1
+
+if option=="tijera":
+  if randonmum=="papel":
+    print("Ganas") 
+  elif  randonmum=="piedra":
+    print("Pierdes")
+  elif randonmum=="tijera":
+    print("Empate")
+
+    
+##case 2
+ 
+if option=="papel":
+  if randonmum=="piedra":
+    print("Ganas") 
+  elif  randonmum=="tijera":
+    print("Pierdes")
+  elif randonmum=="papel":
+    print("Empate")
+
+
+##last clase
+
+if option=="piedra":
+  if randonmum=="tijera":
+    print("Ganas") 
+  elif  randonmum=="papel":
+    print("Pierdes")
+  elif randonmum=="piedra":
+    print("Empate")
+
+##try again
