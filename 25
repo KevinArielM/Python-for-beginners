@@ -1,0 +1,63 @@
+ Dado el siguiente diccionario
+
+calificacion = {
+	"carlos": 8.5,
+	"alan": 9.1,
+	"karla": 7.2,
+	"maria": 10,
+	"david": 6,
+	"felipe": 7.2,
+	"jessica": 5.9
+}
+
+# Dado el siguiente diccionario
+
+calificacion = {
+	"carlos": 8.5,
+	"alan": 9.1,
+	"karla": 7.2,
+	"maria": 10,
+	"david": 6,
+	"felipe": 7.2,
+	"jessica": 5.9
+}
+
+# Se debe de imprimir el nombre seguido de:
+# Si calif. < 6 --> Reprobado
+# Si calif. < 7 --> Aprobado
+# Si calif. < 9 --> Aprobado, felicitaciones
+# Si calif. > 9 --> Aprobado, erudito
+
+
+calificacion = {
+	"carlos": 8.5,
+	"alan": 9.1,
+	"karla": 7.2,
+	"maria": 10,
+	"david": 6,
+	"felipe": 7.2,
+	"jessica": 5.9
+}
+
+# Se debe de imprimir el nombre seguido de:
+for i in calificacion: 
+  #print(calificacion[i])
+  if calificacion[i]<6 :
+    print(f"{i.capitalize()}:\t Reprobado")
+  elif calificacion[i]<7 :
+    print(f"{i.capitalize()}:\t Aprobado")
+  elif calificacion[i]<9:
+    print(f"{i.capitalize()}:\t Aprobado, felicidades")
+  elif calificacion[i]>9:
+    print(f"{i.capitalize()}:\t erudito")
+
+
+
+
+
+
+# Se debe de imprimir el nombre seguido de:
+# Si calif. < 6 --> Reprobado
+# Si calif. < 7 --> Aprobado
+# Si calif. < 9 --> Aprobado, felicitaciones
+# Si calif. > 9 --> Aprobado, erudito
