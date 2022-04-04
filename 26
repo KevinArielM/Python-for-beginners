@@ -1,0 +1,77 @@
+#Reto normal: Blackjack, pero solo usando números del 2 al 10 y reglas limitadas
+
+import random
+from random import randint, choice
+
+
+##define variable of decision
+
+decision=input("Welcome! Do you want to play (yes, no)?: ")
+cards = [randint(2, 10) for i in range(2)]
+computercards = [randint(2, 10) for i in range(2)]
+##define game function, it makes the operations
+##use de dictionaries to print our cards and computer's cards
+def Blackjack():
+	print(f"Your cards: {cards}, total score: {sum(cards)}")
+	print(f"Computer's first card: {computercards[0]}")
+
+##define a funcion using While in order to create a loop
+def Validation():
+	while True:
+		if decision == "yes":
+			return Blackjack()
+      
+      
+		elif decision=="no":
+			print("Come back soon!")
+			break
+
+Validation()
+
+if decision=="yes" :
+  CORP=input("Would you like to continue or pass (C, P)?: ")
+
+cards.append(randint(2, 10))
+#print(cards)
+if decision=="yes" :
+
+  def ddc():
+      while True:
+        if CORP=="C":
+          print(f"Your total with 3 cards are  {sum(cards)}")
+          break
+        if CORP=="P":
+          print(f"the total of the cpu are {sum(computercards)}")
+          break
+          
+
+if decision=="yes":
+  ddc()
+
+if sum(cards)>21:
+  if sum(cards)<sum(computercards)<=21:
+    print("You lost!")
+        
+cards.append(randint(2, 10))
+
+if decision=="yes":
+  if CORP=="C":
+    CORP=input("Would you like to continue or pass (C, P)?: ")
+
+if decision=="yes":
+
+  def ddc2():
+    while True:
+      if CORP=="C":
+        print(f"Your total with 4 cards are  {sum(cards)}")
+        break
+      
+
+if decision=="yes":
+
+  ddc2()
+
+
+
+
+#if sum(computercards)<sum(cards))<=21:
