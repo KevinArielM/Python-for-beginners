@@ -1,0 +1,34 @@
+
+⌄
+⌄
+⌄
+#Cifrado cesár
+#El cifrado cesar se basa en 2 parametros de entrada
+# 1. La cadena que vamos a cifrar
+# 2. La cantidad de desplzamiento(shift)
+
+# Su función es la siguiente
+# Tomará cada uno de los carácteres que nosotros le indiquemos, por ejemplo "Hola"
+# Al principio tomará la letra "h" y la cambiará por la letra que está a "shift" de distancia "m"
+# una vez que cifra la palabra deberá volvernos a preguntar si deseamos codificar otra palabra
+# en caso negativo terminar el programa, en caso positivo, volver a preguntar una palabra y repetir
+# Ejemplo
+# h -> i -> j -> k -> l -> m
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+def cifrado_cesar(palabra, shift):
+	cifrado = [letra for letra in palabra]
+	letras = []
+	for letra in cifrado:
+		movimiento = (alphabet.index(letra) + shift) % 26
+		letras.append(alphabet[movimiento])
+	print(f"Tu palabra es: {''.join(letras)}")
+  
+while True:
+	palabra = input("Dime tu palabra a cifrar: ")
+	shift = int(input("Dime el desplazamiento que tendra: "))
+	cifrado_cesar(palabra, shift)
+	repetir = input("Desea volver a cifrar una palabra? (si/no) ")
+	if repetir == "no":
+		print("Gracias por su visita")
+		break
