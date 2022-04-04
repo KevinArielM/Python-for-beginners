@@ -1,0 +1,56 @@
+# Imprimirlos numeros del 1 al 100
+
+# Si el número es solo divisible entre 3, imprime "Fizz"
+#for i in range (0,101):
+ # if i%3==0:
+  #  print("Fizz")
+  #elif i%5==0:
+   # print("Buzz")
+  #elif i%5==0 and i%3==0:
+   # print("FizzBuzz")
+  #else:
+   # print(i)
+
+# Imprimirlos numeros del 1 al 100
+# Si el número es solo divisible entre 3, imprime "Fizz"
+# Si el número es solo divisible entre 5, imprime "Buzz"
+# Si el número es divisble entre 3 y 5, imprime "FizzBuzz"
+# Si el número no pertenece a ninguno de los casos solo imprime el número
+
+ 
+			
+		
+
+for i in range(101):
+	if i % 3 == 0:
+		if i % 5 ==0:
+			print("FizzBuzz")
+			continue
+		print("Fizz")
+		
+	if i % 5 == 0:
+		print("Buzz")
+		continue
+	print(i)
+
+
+
+for i in range(101):
+	if i % 3 == 0:
+		if i % 5 == 0: 
+			print("FizzBuzz")
+			continue
+		print("Fizz")
+		continue
+	if i % 5 == 0:
+		print("Buzz")
+		continue
+	print(i)
+
+
+
+
+
+# Si el número es solo divisible entre 5, imprime "Buzz"
+# Si el número es divisble entre 3 y 5, imprime "FizzBuzz"
+# Si el número no pertenece a ninguno de los casos solo imprime el número
