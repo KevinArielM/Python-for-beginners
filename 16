@@ -1,0 +1,29 @@
+#Reto2.Día3
+#--- Generador de contraseñas, el usuario ingresará cantidad de letras, 
+##import this functions to generate all kind of character
+import secrets
+import random
+import string
+
+##ask for the data
+letters=int(input("¿Cuántas letras desea para su contraseña?: "))
+
+numbers=int(input("¿Cuántos números desea para su contraseña?: "))
+
+symbols=int(input("¿Cuántas símbolos desea para su contraseña?: "))
+
+##to know how many characters are
+print("Su contraseña es de tamaño"+ " "+ str(letters+numbers+symbols) )
+
+##there we have almost all the Keyboard defining this funcitons
+LETTERS = string.ascii_letters
+NUMBERS = string.digits  
+PUNCTUATION = string.punctuation    
+##I do not exactly how works '' and secrets, but the result is that generate all the characters
+PASSWORD=''.join(secrets.choice(LETTERS) for i in range(letters))+ ''.join(secrets.choice(NUMBERS) for i in range(numbers))+''.join(secrets.choice(PUNCTUATION) for i in range(symbols)) 
+
+##the password is done 
+print("Su contraseña es"+ " "+PASSWORD)
+
+# números y símbolos, y generará la contraseña en el mismo orden, letras, 
+# números y símbolos ---
