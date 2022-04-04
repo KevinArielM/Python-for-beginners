@@ -1,0 +1,11 @@
+#Calcula tu imc
+
+#Ingresa tu peso y altura desde el teclado
+Peso= float(input("Ingrese su peso : "))
+Altura= float(input("Ingrese su altura en metros: "))
+#Formula Peso/(Altura)^2
+#Recordar: round(x,n), donde n:=decimales
+Indice = round(Peso/(Altura**2),6)
+print("Tu IMC es"+" " + str(Indice))
+
+#Tipp: usar "round"
