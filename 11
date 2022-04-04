@@ -1,0 +1,44 @@
+lista=[2,"b"]
+print(lista)
+lista.append("Ariel")
+print(lista)
+lista2=["Juan","Erik", "Pepé", "Ana"]
+print("Esta es una"[3])
+#lista.append(lista2[2])
+lista.extend(lista2) #imprimir todas
+print(lista)
+#para sacar alguien
+lista.pop(5)
+print(lista)
+#mensaje
+#mensaje="es importante"
+#print(mensaje.split("-"))
+
+#lista=["Eduardo","Carlos"]
+#lista2=["Lu"]
+#lista2=lista2.extend(lista)
+#print(lista2)
+
+#lista=[1,2,3,4]
+#print(lista[3])
+
+llista=[["a",1],["b",5]]
+print(llista[1][1])
+print(llista[1][0])
+
+lista3 = [["a",["z","g", 8]],["b","c"]] 
+print(lista3)
+
+#g,b,c
+
+print(lista3[0][1][1]+",", lista3[1][0]+",", lista3[1][1])
+
+#random
+import random
+#primer aleatorio
+#random=random.randint(1,555555)
+print(random.randint(1,55))
+print(random.getrandbits(4))
+print(random.shuffle[1,2,3,4,5])
+
+players=["Juan","Pedro", "Kat"]
