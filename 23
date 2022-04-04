@@ -1,0 +1,63 @@
+
+⌄
+⌄
+⌄
+⌄
+⌄
+⌄
+⌄
+⌄
+⌄
+⌄
+⌄
+a=5
+b=8
+while a<b :
+  #print(a)
+  #a=a+1
+  a+=3
+  
+  
+n1=float(input("Ingrese su primer numero: "))
+n2=float(input("Ingrese su segundo numero: "))
+n3=float(input("Ingrese su tercer numero: "))
+print(n1,n2,n3)
+
+op=input("¿Qué operación quiere realizar (sum,rest,mult,div,exp)?: ")
+
+
+def sum (n1,n2,n3):
+  print(n1+n2+n3)
+#sum(2,2,2)
+
+def rest (n1,n2,n3):
+  print(n1-n2-n3)
+#rest(2,2,2)
+
+def mult(n1,n2,n3):
+  print(n1*n2*n3)
+#mult(2,2,2) 
+
+def div (n1,n2,n3):
+  print(n1/n2/n3)
+#div(2,2,2)
+
+def exp(n1,n2,n3):
+  print(n1**n2**n3)
+#exp(2,2,2)
+
+def calculator(n1,n2,n3,op):
+  if op=="sum":
+    sum(n1,n2,n3)
+  elif op =="rest":
+    rest(n1,n2,n3)
+  elif op =="mult":
+    mult(n1,n2,n3)
+  elif op=="div":
+    div(n1,n2,n3)
+  elif op =="exp":
+    exp(n1,n2,n3)
+      
+print(calculator(n1,n2,n3,op))
+
+#calculator(4,2,1,"exp")
