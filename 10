@@ -1,0 +1,20 @@
+#Reto2.Día2
+#--- Crear una calculadora de factura en un bar, 
+# preguntar el total, añadirle el 15 por ciento, y...
+#Definir nuestras variables
+subtotal= int(input("Ingresar el total de la cuenta: "))
+total=subtotal+subtotal*.15
+#que imprima la operación que deseamos
+print("Su cuenta total es"+" "+str(total))
+# preguntar si la cuenta se va a dividir, en caso que si,
+#preguntar por la división de cuenta, de preferencia solo que escriban "si" o "no"
+pregunta= input("¿Desea dividir la cuenta (si, no)?: ")
+#hacer el proceso if-else, considerando solo el if para cuando responden "si", en otro caso, imprimir el total. En realidad sería "sí" pero por comodidad evitemos el acento
+if pregunta == "si":
+ pers= int(input("¿En cuántas personas quiere dividir la cuenta?: "))
+ print("A cada persona le toca"+" "+str(total/pers))
+else:
+  print("Su cuenta total es"+" "+ str(total))
+
+# preguntar las personas y dar el total a pagar por cada uno, 
+# en caso de que no solo dar el resultado ---
