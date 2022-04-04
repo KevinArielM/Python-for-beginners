@@ -1,0 +1,43 @@
+# Crear un programa que reciba como parametro una lista(puedes declararla en bruto)
+# Pasaras dicha lista por una función llamada "desestructurar"
+# Esta función te regresará los valores pares, si solo pasas la lista
+# Te devolvera los valores impares si le pasas 2 parametros a la función
+
+#ask for a list
+lista = eval(input("Write a list: "))
+
+
+##A lambda function can take any number of arguments, but can only have one expression. Using the fuction...
+
+
+print("The odd numbers are: "+ str(list(filter(lambda x: (x % 2 != 0), lista))))
+
+print("The even numbers are:  "+ str(list(filter(lambda x: (x % 2 == 0), lista))))
+
+
+##with function deconstructurar
+
+def deconstructurar (a,b=0):
+  if a==lista:
+  	print(list(filter(lambda x: (x % 2 == 0), lista)))
+  elif a==lista:
+    if b==1: 
+   	 print(list(filter(lambda x: (x % 2 != 0), lista)))
+print(deconstructurar(lista))
+print(deconstructurar(lista,1))
+
+"""
+def deconstructurar (a,b=0):
+  if b == 0:
+    print("The even numbers are:  "+ str(list(filter(lambda x: (x % 2 == 0), lista))))
+  elif b == 1:
+			print("The odd numbers are: "+ str(list(filter(lambda x: (x % 2 != 0), lista))))
+
+deconstructurar(lista)
+deconstructurar(lista,1)
+"""
+#Ejemplo
+
+# lista = [1, 2, 3, 4, 5, 6]
+# pares = desestructurar(lista)
+# impares = desestructurar(lista, 1)
